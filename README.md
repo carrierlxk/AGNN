@@ -8,7 +8,7 @@ Code for ICCV 2019 paper: Zero-shot Video Object Segmentation via Attentive Grap
 
 1. Install pytorch (version:1.0.1).
 
-2. Download the pretrained model. Run 'test_iteration_conf_gnn.py' and change the davis dataset path, pretrainde model path and result path.
+2. Download the pretrained model, put in the snapshots folder. Run 'test_iteration_conf_gnn.py' and change the davis dataset path, pretrainde model path and result path.
 
 3. Run command: python test_iteration_conf_gnn.py --dataset davis --gpus 0
 
