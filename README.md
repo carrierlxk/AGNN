@@ -14,7 +14,7 @@ Code for ICCV 2019 paper: Zero-shot Video Object Segmentation via Attentive Grap
 
 4. Post CRF processing code: https://github.com/lucasb-eyer/pydensecrf
 
-The pretrained weight can be download from [GoogleDrive](https://drive.google.com/open?id=14ya3ZkneeHsegCgDrvkuFtGoAfVRgErz) or [BaiduPan](https://pan.baidu.com/s/16oFzRmn4Meuq83fCYr4boQ), pass code: xwup.
+The pretrained weight can be download from [GoogleDrive](https://drive.google.com/open?id=14ya3ZkneeHsegCgDrvkuFtGoAfVRgEr1) or [BaiduPan](https://pan.baidu.com/s/16oFzRmn4Meuq83fCYr4bo2), pass code: xwup.
 
 ### Citation
 If you find the code and dataset useful in your research, please consider citing:
