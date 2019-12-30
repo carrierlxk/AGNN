@@ -361,7 +361,7 @@ def Res_Deeplab(num_classes=2):
     model = ResNet(Bottleneck, [3, 4, 23, 3], num_classes-1)
     return model
 
-def CoattentionNet(num_classes=2):
+def GNNNet(num_classes=2):
     model = CoattentionModel(Bottleneck,[3, 4, 23, 3], num_classes-1)
 	
     return model
