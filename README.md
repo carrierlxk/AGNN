@@ -11,10 +11,11 @@ Code for ICCV 2019 paper: Zero-shot Video Object Segmentation via Attentive Grap
 2. Download the pretrained model, put in the snapshots folder. Run 'test_iteration_conf_gnn.py' and change the davis dataset path, pretrainde model path and result path.
 
 3. Run command: python test_iteration_conf_gnn.py --dataset davis --gpus 0
+  multiple scale: python test_iteration_conf_gnn_scale.py --dataset davis --gpus 0
 
 4. Post CRF processing code: https://github.com/lucasb-eyer/pydensecrf
 
-The pretrained weight can be download from [GoogleDrive](https://drive.google.com/open?id=14ya3ZkneeHsegCgDrvkuFtGoAfVRgEr1) or [BaiduPan](https://pan.baidu.com/s/16oFzRmn4Meuq83fCYr4bo2), pass code: xwup.
+The pretrained weight can be download from [GoogleDrive](https://drive.google.com/open?id=1w4hWVC7ZTTVDJCQN6-vOVLY9JLJCru7G) or [BaiduPan](https://pan.baidu.com/s/16oFzRmn4Meuq83fCYr4bo2), pass code: xwup.
 
 ### Citation
 If you find the code and dataset useful in your research, please consider citing:
