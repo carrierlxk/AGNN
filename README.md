@@ -16,6 +16,8 @@ Code for ICCV 2019 paper: Zero-shot Video Object Segmentation via Attentive Grap
 
 The pretrained weight can be download from [GoogleDrive](https://drive.google.com/open?id=1w4hWVC7ZTTVDJCQN6-vOVLY9JLJCru7G) or [BaiduPan](https://pan.baidu.com/s/16oFzRmn4Meuq83fCYr4bo2), pass code: xwup.
 
+The segmentation results on DAVIS-2016, Youtube-objects and DAVIS-2017 datasets can be download from [GoogleDiver](https://drive.google.com/open?id=1w5nRgUdUz-OxUhEYjytYDXB_xa2r983_).
+
 ### Citation
 If you find the code and dataset useful in your research, please consider citing:
 
