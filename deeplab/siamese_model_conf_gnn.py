@@ -251,7 +251,7 @@ class CoattentionModel(nn.Module):
         self.main_classifier1 = nn.Conv2d(all_channel, num_classes, kernel_size=1, bias = True)
         #self.main_classifier2 = nn.Conv2d(all_channel, num_classes, kernel_size=1, bias = True)
         self.softmax = nn.Sigmoid()
-        self.propagate_layers = 10
+        self.propagate_layers = 5
         
         for m in self.modules():
             if isinstance(m, nn.Conv2d):
