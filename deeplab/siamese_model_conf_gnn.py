@@ -285,7 +285,7 @@ class CoattentionModel(nn.Module):
             for passing_round in range(self.propagate_layers):
 
                 attention1 = self.conv_fusion(torch.cat([self.generate_attention(exemplar, query),
-                                         self.generate_attention(exemplar, query1)],1))
+                                         self.generate_attention(exemplar, query1)],1)) #message passing with concat operation
                 attention2 = self.conv_fusion(torch.cat([self.generate_attention(query, exemplar),
                                         self.generate_attention(query, query1)],1))
                 attention3 = self.conv_fusion(torch.cat([self.generate_attention(query1, exemplar),
