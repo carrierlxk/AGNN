@@ -31,7 +31,7 @@ import torch.nn as nn
 from utils.colorize_mask import cityscapes_colorize_mask, VOCColorize
 from scipy import ndimage
 #from pydensecrf.utils import unary_from_softmax, create_pairwise_bilateral, create_pairwise_gaussian
-from deeplab.siamese_model_conf_gnn3_sa_org import CoattentionNet
+from deeplab.siamese_model_conf_gnn import CoattentionNet
 from torchvision.utils import save_image
 my_scales = [0.75, 1.0, 1.5]
 def get_arguments():
