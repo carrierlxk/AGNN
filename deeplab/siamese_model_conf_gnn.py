@@ -11,7 +11,7 @@ import torch.nn.functional as F
 from torch.nn import init
 affine_par = True
 import sys
-sys.path.append('/home/ubuntu/xiankai/Co-attention_conf/deeplab')
+sys.path.append('/home/ubuntu/xiankai/deeplab')
 import units
 import units.ConvGRU2 as ConvGRU
 #区别于siamese_model_concat的地方就是采用的最标准的deeplab_v3的基础网络，然后加上了非对称的分支
