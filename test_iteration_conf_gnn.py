@@ -31,7 +31,7 @@ import torch.nn as nn
 from utils.colorize_mask import cityscapes_colorize_mask, VOCColorize
 from scipy import ndimage
 #from pydensecrf.utils import unary_from_softmax, create_pairwise_bilateral, create_pairwise_gaussian
-from deeplab.siamese_model_conf_gnn import CoattentionNet
+from deeplab.siamese_model_conf_gnn import GNNNet
 from torchvision.utils import save_image
 my_scales = [0.75, 1.0, 1.5]
 def get_arguments():
@@ -106,7 +106,7 @@ def main():
         os.environ["CUDA_VISIBLE_DEVICES"] = args.gpus
         if not torch.cuda.is_available():
             raise Exception("No GPU found or Wrong gpu id, please run without --cuda")
-    model = CoattentionNet(num_classes=args.num_classes)
+    model = GNNNet(num_classes=args.num_classes)
     for param in model.parameters():
         param.requires_grad = False
 
