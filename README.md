@@ -21,8 +21,8 @@ Code for ICCV 2019 paper: Zero-shot Video Object Segmentation via Attentive Grap
 
 3. Run command:  python test_iteration_conf_gnn.py --dataset davis --gpus 0
 
-4. Post CRF processing code: https://github.com/lucasb-eyer/pydensecrf
-
+4. Post CRF processing code: https://github.com/lucasb-eyer/pydensecrf (scale=1 for unary,sdims = 1, compat=5 for pairwise Gaussian, sdims=30, schan=5, compat=9
+)
 The pretrained weight can be download from [GoogleDrive](https://drive.google.com/open?id=1w4hWVC7ZTTVDJCQN6-vOVLY9JLJCru7G).
 
 The segmentation results on DAVIS-2016, Youtube-objects and DAVIS-2017 datasets can be download from [GoogleDiver](https://drive.google.com/open?id=1w5nRgUdUz-OxUhEYjytYDXB_xa2r983_).
