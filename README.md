@@ -29,14 +29,14 @@ The segmentation results on DAVIS-2016, Youtube-objects and DAVIS-2017 datasets 
 
 ### Citation
 If you find the code and dataset useful in your research, please consider citing:
-
+```
 @InProceedings{Wang_2019_ICCV,  
 author = {Wang, Wenguan and Lu, Xiankai and Shen, Jianbing and Crandall, David J. and Shao, Ling},  
 title = {Zero-Shot Video Object Segmentation via Attentive Graph Neural Networks},  
 booktitle = {The IEEE International Conference on Computer Vision (ICCV)},  
 year = {2019}  
 }
-
+```
 ### Other related projects/papers:
 [See More, Know More: Unsupervised Video Object Segmentation with Co-Attention Siamese Networks(CVPR19)](https://github.com/carrierlxk/COSNet)
 
