@@ -34,7 +34,7 @@ The pretrained weight can be download from [GoogleDrive](https://drive.google.co
 
 3. Download the code of PReMVOS from [here](https://github.com/JonathonLuiten/PReMVOS). Run the proposal generation and combination code with the provided network. In this way, we can obtain the instance level proposals for each frame. 
 
-4. Run the command proposal_selection_un.py to select the foreground instances and generate related json and jpeg file. Copy this file to PReMVOS and make a new file called my_data.
+4. Run the command proposal_selection_un.py to select the foreground instances from the first frame for each video and generate related json and jpeg file. Copy this file to PReMVOS and make a new file called my_data.
 
 5. Run the code of refinement_net in PReMVOS and generate the mask for each instance.
 
