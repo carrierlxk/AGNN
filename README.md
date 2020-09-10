@@ -28,7 +28,7 @@ The pretrained weight can be download from [GoogleDrive](https://drive.google.co
 
 **For instance-level zero-shot VOS (multiple instances):**
 
-1. Download DAVIS-2017 dataset and run the object level zero-shot VOS for each video.In this way, we can obtain the object-level mask for each frame. 
+1. Download DAVIS-2017 dataset and run the object level zero-shot VOS for each video. In this way, we can obtain the object-level mask for each frame. 
 
 2. Download the code of PWCNet from [here](https://github.com/sniklaus/pytorch-pwc) and compute the optical flow for each video.
 
@@ -38,7 +38,7 @@ The pretrained weight can be download from [GoogleDrive](https://drive.google.co
 
 5. Run the code of refinement_net in PReMVOS and generate the mask for each instance.
 
-6. Change the path of first frame as well annotation in MergeTrack/merge.py. Run the mergetrack code to associate the instance mask across the subsequent frames.
+6. Change the path of first frame as well as annotation in MergeTrack/merge.py. Run the mergetrack code to associate the instance mask across the subsequent frames.
 
 
 The segmentation results on DAVIS-2016, Youtube-objects and DAVIS-2017 datasets can be download from [GoogleDiver](https://drive.google.com/open?id=1w5nRgUdUz-OxUhEYjytYDXB_xa2r983_).
