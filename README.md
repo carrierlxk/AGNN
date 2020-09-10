@@ -14,7 +14,7 @@ Code for ICCV 2019 paper: Zero-shot Video Object Segmentation via Attentive Grap
 4. Run command: python train_iteration_conf_agnn.py --dataset davis --gpus 0,1
 
 #### Testing
-**For Object level zero-shot VOS:
+**For Object level zero-shot VOS:**
 
 1. Install pytorch (version:1.0.1).
 
@@ -26,7 +26,7 @@ Code for ICCV 2019 paper: Zero-shot Video Object Segmentation via Attentive Grap
 )
 The pretrained weight can be download from [GoogleDrive](https://drive.google.com/open?id=1w4hWVC7ZTTVDJCQN6-vOVLY9JLJCru7G).
 
-**For instance-level zero-shot VOS (multiple instances)
+**For instance-level zero-shot VOS (multiple instances):**
 
 1. Download DAVIS-2017 dataset and run the object level zero-shot VOS for each video.In this way, we can obtain the object-level mask for each frame. 
 
