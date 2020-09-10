@@ -14,6 +14,7 @@ Code for ICCV 2019 paper: Zero-shot Video Object Segmentation via Attentive Grap
 4. Run command: python train_iteration_conf_agnn.py --dataset davis --gpus 0,1
 
 #### Testing
+**For Object level zero-shot VOS:
 
 1. Install pytorch (version:1.0.1).
 
@@ -24,6 +25,20 @@ Code for ICCV 2019 paper: Zero-shot Video Object Segmentation via Attentive Grap
 4. Post CRF processing code: https://github.com/lucasb-eyer/pydensecrf (scale=1 for unary,sdims = 1, compat=5 for pairwise Gaussian, sdims=30, schan=5, compat=9
 )
 The pretrained weight can be download from [GoogleDrive](https://drive.google.com/open?id=1w4hWVC7ZTTVDJCQN6-vOVLY9JLJCru7G).
+
+**For instance-level zero-shot VOS (multiple instances)
+
+1. Download DAVIS-2017 dataset and run the object level zero-shot VOS for each video.In this way, we can obtain the object-level mask for each frame. 
+
+2. Download the code of PWCNet from [here](https://github.com/sniklaus/pytorch-pwc) and compute the optical flow for each video.
+
+3. Download the code of PReMVOS from [here](https://github.com/JonathonLuiten/PReMVOS). Run the proposal generation and combination code with the provided network. In this way, we can obtain the instance level proposals for each frame. 
+
+4. Run the command proposal_selection_un.py to select the foreground instances and generate related json and jpeg file. Copy this file to PReMVOS and make a new file called my_data.
+
+5. Run the code of refinement_net in PReMVOS and generate the mask for each instance.
+
+6. Change the path of first frame as well annotation in MergeTrack/merge.py. Run the mergetrack code to associate the instance mask across the subsequent frames.
 
 
 The segmentation results on DAVIS-2016, Youtube-objects and DAVIS-2017 datasets can be download from [GoogleDiver](https://drive.google.com/open?id=1w5nRgUdUz-OxUhEYjytYDXB_xa2r983_).
