@@ -27,10 +27,7 @@ Code for ICCV 2019 paper: Zero-shot Video Object Segmentation via Attentive Grap
 The pretrained weight can be download from [GoogleDrive](https://drive.google.com/open?id=1w4hWVC7ZTTVDJCQN6-vOVLY9JLJCru7G).
 
 **For instance-level zero-shot VOS (multiple instances):**
-the authors claim that  **We hope the reviewer will not punish us because we have introduced the GPM module in order to improve DeAOT's efficiency. We just believe this will contribute to the VOS community further. **
 
-Wow, firstly, I have never punished any ones. I just give my comments objectively.
-Secondly, why do you just believe this will contribute to the VOS community further? Is this an overclaim? This work still follows the AOT [58] framework. The generalization ability of the proposed method has not been proved. Also, the performance promotion compared to AOT is moderate. 
 1. Download DAVIS-2017 dataset and run the object level zero-shot VOS for each video. In this way, we can obtain the object-level mask for each frame. 
 
 2. Download the code of PWCNet from [here](https://github.com/sniklaus/pytorch-pwc) and compute the optical flow for each video.
